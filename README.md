@@ -7,20 +7,6 @@ This example shows how to run a local **n8n service** using docker-compose.
   - [Docker](https://docs.docker.com/engine/install/)
   - [Docker-Compose](https://docs.docker.com/compose/install/) **Only needed for older versions of Docker**
 
-Uh oh. You have a newer version of Docker (> 4.41) that only supports the newer `docker compose`
-plugin, but all the scripts in this repo depend on `docker-compose` - what to do? There's a solution
-for **MacOS**! Run the following commands to create an executable script that will invoke `docker
-compose` when `docker-compose` is requested.
-
-```sh
-sudo touch /usr/local/bin/docker-compose
-echo 'docker compose --compatibility "$@"' | sudo tee /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-```
-
-Because Docker's running with "compatibility" you won't have access to some of the nice features
-that `docker compose` supports like automatically showing logs after starting a container.
-
 ## Instructions
 ### Step 1. Clone the repo
 Clone the repo to your local machine by running the following command:
