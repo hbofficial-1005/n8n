@@ -36,8 +36,8 @@ docker-compose logs -f
 ```
 
 The tail of the logs should show the following message:
-Editor is now accessible via:
 ```bash
+Editor is now accessible via:
 https://localhost:5678/
 ```
 
