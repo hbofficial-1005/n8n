@@ -45,8 +45,6 @@ https://localhost:5678/
 ### Step 4. Access the service
 Open a browser and navigate to the following URL: [https://localhost:5678/](https://localhost:5678/)
 
-Note: we use self-signed certificates for local development to enable Oauth callbacks for 3rd party integrations, e.g. Slack.
-
 ## Next Steps
 This repo contains folders with additional docker-compose files for other services that can be run in conjunction with n8n.
 
